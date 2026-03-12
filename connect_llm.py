@@ -29,8 +29,8 @@ message = [
 ]
 
 # 测试连接是否成功
-qw_resp = qw_llm.invoke(message)
-print(f"千问回答：{qw_resp}")
+# qw_resp = qw_llm.invoke(message)
+# print(f"千问回答：{qw_resp}")
 
 # ds_resp = ds_llm.invoke(message)
 # print(f"deepseek回答：{ds_resp}")
@@ -43,10 +43,10 @@ from zai import ZhipuAiClient
 zai_llm = ZhipuAiClient(api_key=ZAI_API_KEY)
 
 # Create chat completion
-zai_resp = zai_llm.chat.completions.create(
-    model="glm-5",
-    messages=[
-        {"role": "user", "content": "你好，请介绍一下自己, Z.ai!"}
-    ]
-)
-print(zai_resp.choices[0].message.content)
+# zai_resp = zai_llm.chat.completions.create(
+#     model="glm-5",
+#     messages=[
+#         {"role": "user", "content": "你好，请介绍一下自己, Z.ai!"}
+#     ]
+# )
+# print(zai_resp.choices[0].message.content)
