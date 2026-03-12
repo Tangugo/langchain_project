@@ -50,3 +50,12 @@ zai_llm = ZhipuAiClient(api_key=ZAI_API_KEY)
 #     ]
 # )
 # print(zai_resp.choices[0].message.content)
+
+
+multiModel_llm = ChatOpenAI(
+    model="qwen2.5-omni-3b",
+    base_url=LOCAL_BASE_URL,
+    api_key=LOCAL_API_KEY,
+    temperature=0.9,
+    presence_penalty=0.8,
+)

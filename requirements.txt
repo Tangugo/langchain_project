@@ -1,3 +1,7 @@
+opencv-python==4.13.0.92
+pillow==12.1.1
+gradio==6.9.0
+langchain-community==0.4.1
 annotated-types==0.7.0
 anyio==4.12.1
 cachetools==7.0.5
