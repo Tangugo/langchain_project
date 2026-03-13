@@ -9,6 +9,20 @@ from langchain_core.messages import HumanMessage
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.runnables import RunnableWithMessageHistory, RunnableConfig
 
+
+""" 部署多模态大模型
+python -m vllm.entrypoints.openai.api_server \
+    --model /root/autodl-tmp/models/Qwen/Qwen2.5-Omni-3B \
+    --served-model-name qwen2.5-omni-3b \
+    --max-model-len 8192 \
+    --host 0.0.0.0 \
+    --port 6006 \
+    --dtype float16 \
+    --gpu-memory-utilization 0.8 \
+    --enable-auto-tool-choice \
+    --tool-call-parser hermes
+"""
+
 # 导入自定义的 LLM 连接模块
 from connect_llm import multiModel_llm
 
