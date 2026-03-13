@@ -145,6 +145,10 @@ env.bak/
 venv.bak/
 
 .idea
+*.db
+*.sqlite3
+models/
+chroma_db
 
 # Spyder project settings
 .spyderproject

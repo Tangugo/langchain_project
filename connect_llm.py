@@ -9,7 +9,7 @@ qw_llm = ChatOpenAI(
     presence_penalty=0.8,   # 控制模型是否重复使用已经出现过的词汇/概念，等于0不惩罚，大于0如果某个词已经出现过，它再次被选中的概率会大幅降低。这会强迫模型使用新词汇，拓展话题，避免车轱辘话。
     base_url=LOCAL_BASE_URL,
     api_key=LOCAL_API_KEY,
-    extra_body={"chat_template_kwargs": {"enable_thinking": True}}
+    extra_body={"chat_template_kwargs": {"enable_thinking": False}}
 )
 
 # 链接 deepseek
